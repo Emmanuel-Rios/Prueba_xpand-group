@@ -4,4 +4,6 @@ Hice una API para conectar el front con la base de datos y asi poder almacenar d
 
 Tambien es importante saber que la API de Youtube te da un consumo limitado, en dado caso de que el video no cargue es porque mi Key_api ya alcanso su consumo maximo de esta.
 
+En readme de la Api dejare las configuraciones del servidor y conexiones para que hagan las pruebas y puedan utilizar el proyecto en buena forma
+
 
