@@ -1,0 +1,114 @@
+.box-slider {
+    background-color: #f3f3f1;
+    padding: 5%;
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    /* Utilizamos flexbox para centrar las imágenes */
+    justify-content: center;
+    /* Centramos horizontalmente las imágenes */
+}
+
+.slide img {
+    border-radius: 30px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+/* Estilos para pantallas más pequeñas (por ejemplo, dispositivos móviles) */
+@media screen and (max-width: 768px) {
+    .slide {
+        min-width: 100vw;
+    }
+
+    .slide img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide img {
+    width: 600px;
+    height: 400px;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #555;
+}
+
+/* Estilos para íconos de los botones */
+.prev-btn i,
+.next-btn i {
+    margin-right: 5px;
+}

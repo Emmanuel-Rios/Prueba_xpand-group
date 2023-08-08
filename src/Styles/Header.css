@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Rubik&display=swap');
+
+.header-container {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px;
+  border-radius: 55px;
+  max-width: 85%;
+  margin: 60px auto;
+  vertical-align: middle;
+}
+
+
+body {
+  background-color: #780016;
+}
+
+.logo {
+  font-size: 24px;
+  margin-left: 10px;
+  text-align: start;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+.iconAmericas {
+  font-size: 24px;
+  text-align: start;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #000000;
+  font-family: 'Manrope', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  margin-right: 30px;
+}
+
+.nav-item:hover{
+  color: #780016;
+}
+
+.mobile-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: absolute;
+  top: 60px;
+  /* Ajustar la posición vertical del menú desplegable */
+  right: 10px;
+  /* Ajustar la posición horizontal del menú desplegable */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: block;
+  }
+
+  .show-mobile-nav {
+    display: flex;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .show-mobile-nav a:hover {
+    font-weight: 100px;
+    color: #780016;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-container {
+    margin: 60px auto;
+
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 868px) {
+  .header-container {
+    margin: 60px auto;
+
+  }
+}
+
+/* Para pantallas más grandes */
+@media screen and (min-width: 1200px) {
+  .header-container {
+    margin: 60px auto;
+
+  }
+}
+
+/* Para pantallas muy grandes */
+@media screen and (min-width: 1600px) {
+  .header-container {
+    margin: 60px auto;
+
+  }
+}
+
+
+@media screen and (min-width: 1920px) {
+  .header-container {
+    padding: 25px 10px;
+    margin: 60px auto;
+
+  }
+}

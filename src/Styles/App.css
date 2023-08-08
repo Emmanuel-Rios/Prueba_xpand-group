@@ -1,0 +1,7 @@
+.Container {
+    width: 100%;
+    /* Porcentaje en lugar de píxeles */
+    /* También puedes usar porcentajes para limitar el tamaño máximo */
+    margin: 0 auto;
+    /* Centrar el contenedor horizontalmente */
+}

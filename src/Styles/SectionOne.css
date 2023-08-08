@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Rubik:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Rubik&display=swap');
+
+
+@keyframes floatOne {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+
+      transform: translatey(0px);
+    }
+  }
+
+.sectionOne {
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    margin: 20px auto;
+    margin-bottom: 12vh;
+}
+
+.sent-SectionOne {
+    color: #f9dd62;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+    margin: 0;
+}
+
+.text-SectionOne {
+    color: #ffffff;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.sectionOne img {
+    animation: floatOne 3s ease-in-out infinite;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    width: 30cqmax;
+}
+
+@media screen and (max-width: 600px) {
+    .sent-SectionOne {
+        font-size: 3em;
+        margin-top: 50px;
+    }
+
+    
+
+}
+
+@media screen and (min-width: 868px) {
+    .sectionOne {
+        flex-direction: row;
+
+    }
+
+    .sent-SectionOne {
+        margin-top: 140px;
+    }
+}
+
+/* Para pantallas más grandes */
+@media screen and (max-width: 1200px) {
+    .sectionOne {
+        flex-direction: column;
+
+    }
+
+    .sectionOne img{
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+}
+
+/* Para pantallas muy grandes */
+@media screen and (min-width: 1600px) {
+    .sent-SectionOne {
+        font-size: 4em;
+        margin-top: 170px;
+    }
+
+    .sectionOne {
+        flex-direction: row;
+
+    }
+
+    .text-SectionOne{
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sent-SectionOne {
+        font-size: 6em;
+        margin-top: 140px;
+        /* width: 60%; */
+    }
+
+    .text-SectionOne {
+        font-size: 1.2em;
+    }
+
+    .sectionOne {
+        flex-direction: row;
+
+    }
+
+    .text-SectionOne {
+        width: 40%;
+    }
+}
